@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
+    <style>
+        .required {
+            color: #FF0000;
+        }
+    </style>
+    <!-- <head>
+        <style>
+            <meta charset="utf-8" >
+            <meta name="viewport" content="width=device-width,initial-scale=1" >
+            <link href="" rel="stylesheet" integrity=""
+            <title >New Tracker</title >
+        </style>
+    </head> -->
+    <style>
+        h1 {
+            position: page;
+            top: 1%;
+            left: 35%;
+            text-align: center;
+            font-size: xxx-large;
+        }
+
+        h2 {
+            position: page;
+            top:14%;
+            left: 35%;
+            text-align: center;
+        }
+
+        h4 {
+            position: absolute;
+            top: 95%;
+            left: 50%;
+            transform: translate(-45%, -40%);
+            background-color: #808080;
+            color: WindowText;
+            font-size: 50px;
+            padding: 50px 50px;
+            border: double;
+            cursor: unset;
+            border-radius: 40px;
+            text-align: left;
+            font-size: x-large;
+        }
+        p1 {
+            position: absolute;
+            top: 90%;
+            left: -88%;
+            transform: translate(30%, 50%);
+            -ms-transform: translate(-50%, -50%);
+            color: black;
+            font-size: 20px;
+            padding: 10px 300px;
+            cursor: unset;
+            border-radius: 10px;
+            text-align: left;
+        }
+        p {
+            position: fixed;
+            top: 88%;
+            left: 2%;
+            transform: translate(-1%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: mediumpurple;
+            color: aliceblue;
+            font-size: 16.61px;
+            padding: 10px 255px;
+            cursor: unset;
+            border-radius: 10px;
+            text-align: left;
+        }
+        h3 {
+            position: absolute;
+            top: 101%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #f3f6;
+            color: WindowFrame;
+            font-size: 20px;
+            padding: 15px 15px;
+            border: double;
+            cursor: pointer;
+            border-radius: 20px;
+            text-align: center;
+        }
+        a {
+            position: absolute;
+            top: 106%;
+            right:15%;
+            font-size:12px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body style="background-color:powderblue;">
+
+    <div class="text">
+        <h1>Agreement Tracker ⏳</h1>
+        <h2>Keep smiling always 😂😍😜😁🤣🤣🤣</h2>
+
+        <form method="post" action="" name="contactform" id="contactform">
+            <h4>
+                <div class="container">
+                    <div class="form-label-group">
+                        <label for="inputEmail">Name <span class="required">*</span></label>
+                        <select name="Name" id="select2" class="form-label-group" required>
+                            <option value=""></option>
+                            <option value="Kabita Majumder">Kabita Majumder</option>
+                            <option value="Nayana M">Nayana M</option>
+                            <option value="Punam Bhumij">Punam Bhumij</option>
+                            <option value="Rubavathy S">Rubavathy S</option>
+                            <option value="S Chandra Sekhar">S Chandra Sekhar</option>
+                            <option value="S Dinakaran">S Dinakaran</option>
+                            <option value="S Sindhu">S Sindhu</option>
+                            <option value="Sarbafong Kathar">Sarbafong Kathar</option>
+                            <option value="Shilpi Khatun">Shilpi Khatun</option>
+                            <option value="Shiva R">Shiva R</option>
+                            <option value="Surajit Malik">Surajit Malik</option>
+
+                        </select>
+                    </div>
+                    <!-- <label>Name</label> <br /> <input type="text" class="form-control" placeholder="Name" name="Name" id="name" required /> -->
+                    <br />
+                    <label>EMP ID<span class="required">*</span> </label> <br /> <input type="text" class="form-control" placeholder="EMP ID" name="EMP ID" id="EMP ID" required />
+                    <br /> <br />
+                    <label>Registered number<span class="required">*</span> </label> <br /> <input type="number" class="form-control" placeholder="Registered number" name="Registered number" id="phone" required /> <!--=COUNTIF($A$1:G,INDIRECT(ADDRESS(ROW(),COLUMN(),)))=1-->
+                    <br /> <br />
+                    <label>Alternate Number</label> <br /> <input type="number" class="form-control" name="Alternate Number" placeholder="Alternate Number"> <!--<textares /> -->
+                    <br /> <br />
+                    <label>TW ID<span class="required">*</span> </label> <br /> <input type="text" size="55" class="form-control" placeholder="TW ID" name="TW ID" id="TW ID" required />
+                    <br /> <br />
+                    <label>Cl ID<span class="required">*</span> </label> <br /> <input type="text" size="55" class="form-control" placeholder="CL ID" name="CL ID" id="CL ID" required />
+                    <br /> <br />
+                    <label> Mandate type<span class="required">*</span> </label> <br />                   <!-- <input type="text" class="form-control" placeholder="Mandate type" name="Mandate type" id="Mndate type" /> -->
+                    <select name="Mandate Type" required
+                <option value="Mandate Type" class="form-control" placeholder="Mandate Type" name="Mandate Type" id="Mandate Type">Mandate Type</option>
+                <option value="" selected> </option> <option value="E-Mandate">E-Mandate</option> <option value="Paper-Mandate">Paper-Mandate</option> <option value="Aadhar Nach">Aadhar Nach</option>
+                </select> <br /> <br />
+                    <label>Have you promoted Wellness Product?<span class="required">*</span> </label> <br /> <br /> <input type="radio" value="Yes" size="70" class="form-control" placeholder="Have you promoted Wellness Product?" name="Have you promoted Wellness Product?" id="Have you promoted Wellness Product?" />
+                    <label>Yes</label> <input type="radio" required size="70" class="form-control" value="No" placeholder="Have you promoted Wellness Product?" name="Have you promoted Wellness Product?" id="Have you promoted Wellness Product?" />
+                    <label>No</label>
+                    <br /> <br />
+                    <label>Have you sell wellness Product?<span class="required">*</span> </label> <br /> <br /> <input type="radio" value="Yes" size="70" class="form-control" placeholder="Have you sell wellness Product?" name="Have you sell wellness Product?" id="Have you sell wellness Product?" />
+                    <label>Yes</label> <input type="radio" required size="70" class="form-control" value="No" placeholder="Have you sell wellness Product?" name="Have you sell wellness Product?" id="Have you sell wellness Product?" />
+                    <label>No</label>
+                    <br /> <br /> <br />
+                    <label>
+                        Why no please select the reason?<span class="required">*</span>
+                    </label> <br />
+                    <select name="Why no please select the reason?" required
+                <option value="Why no please select the reason?" class="form-control" placeholder="Why no please select the reason?" name="Why no please select the reason?" id="Why no please select the reason?">Why no please select the reason?</option>
+                <option value="" selected> </option> <option value="Don't need 3rd insurance.">Don't need 3rd insurance.</option> <option value="Doesn't want to spend another 1500.">Doesn't want to spend another 1500.</option> <option value="Already have health insurance.">Already have health insurance.</option>
+                <option value="Fit and fine - no need of insurance.">Fit and fine - no need of insurance.</option><option value="Started Before 14th June.">Started Before 14th June.</option> <option value="Unable to select wellness option.">Unable to select wellness option.</option>
+                <option value="Already Sell wellness Product.">Already Sell wellness Product.</option><option value="Self Journey.">Self Journey.</option>
+                </select> <br /> <br />
+
+                    <label>Paper mandate reason<span class="required">*</span></label> <br />
+                    <select name="Paper mandate reason" required
+                           <option value="Paper mandate reason" class="form-control" placeholder="Paper mandate reason" name="Paper mandate reason" id="Paper mandate reason">Paper mandate reason</option>
+                            <option value="" selected> </option>
+                            <option value="Agreement done - e-mandate">Agreement done - e-mandate</option>
+                            <option value="Bank not listed">Bank not listed</option>
+                            <option value="Net banking not availble and not ready to proceed with debit card">Net banking not availble and not ready to proceed with debit card</option>
+                            <option value="Customer is not willing to provide his debit card details">Customer is not willing to provide his debit card details</option>
+                            <option value="Technical issue while proceeding through Emandate">Technical issue while proceeding through Emandate</option>
+                            <option value="Debit card not listed">Debit card not listed</option>
+                            <option value="Self initiated journey without CC guidance">Self initiated journey without CC guidance</option>
+                            <option value="Not willing to procced through emandate">Not willing to procced through emandate</option>
+                            <option value="Customer does not have netbanking/debit card">Customer does not have netbanking/debit card</option>
+                            <option value="Bank merged not available in mandate list">Bank merged not available in mandate list</option>
+                            <option value="Debit card is not available at present">Debit card is not available at present</option>
+                            <option value="Netbanking not avaialble">Netbanking not avaialble</option>
+                            <option value="Not comfortable with Emandate">Not comfortable with Emandate</option>
+                            <option value="Net banking not available and debit card lost">Net banking not available and debit card lost</option>
+                            <option value="Debit card not listed and net banking not available">Debit card not listed and net banking not available</option>
+                            <option value="Not receiving OTP from Bank">Not receiving OTP from Bank</option>
+                            <option value="IDBI Bank name not showing in application">IDBI Bank name not showing in application</option>
+                            <option value="Debit card pin forgot">Debit card pin forgot</option>
+                            <option value="Technical issue while proceeding through netbanking, not ready for debit card">Technical issue while proceeding through netbanking, not ready for debit card</option>
+                            <option value="E-Mandate Authentication not successful, So proceeded with paper mandate">E-Mandate Authentication not successful, So proceeded with paper mandate</option>
+                            <option value="Customer does not have the option to select E-Nach">Customer does not have the option to select E-Nach</option>
+                            <option value="Option 22">Option 22</option>
+                    </select> <br /> <br />
+                    <label>Bank Name<span class="required">*</span></label><br />
+                    <select name="Bank Name" required
+                    <option value="Bank Name" class="form-control" placeholder="Bank Name" name="Bank Name" id="Bank Name">Bank Name</option>
+                    <option value="" selected> </option>
+                    <option value="SBI">SBI</option>
+                    <option value="Bandhan Bank">Bandhan Bank</option>
+                    <option value="Grameen Bank">Grameen Bank</option>
+                    <option value="Union Bank">Union Bank</option>
+                    <option value="Bank of india">Bank of india</option>
+                    <option value="Allahabad Bank">Allahabad Bank</option>
+                    <option value="UCO Bank">UCO Bank</option>
+                    <option value="United bank Of india">United bank Of india</option>
+                    <option value="Andhra Bank">Andhra Bank</option>
+                    <option value="Indian Bank">Indian Bank</option>
+                    <option value="Sydicate Bank">Sydicate Bank</option>
+                    <option value="Adarsha Co operative bank">Adarsha Co operative bank</option>
+                    <option value="JAMMU AND KASHMIR BANK LTD.">JAMMU AND KASHMIR BANK LTD.</option>
+                    <option value="Vilas bank">Vilas bank</option>
+                    <option value="Lakshmi vilas bank">Lakshmi vilas bank</option>
+                    <option value="CATHOLIC SYRIAN BANK">CATHOLIC SYRIAN BANK</option>
+                    <option value="Punjab & sind  Bank">Punjab & sind  Bank</option>
+                    <option value="Axis Bank">Axis Bank</option>
+                    <option value="Karnataka Bank">Karnataka Bank</option>
+                    <option value="HDFC Bank">HDFC Bank</option>
+                    <option value="Ujjivan Bank">Ujjivan Bank</option>
+                    <option value="Canara Bank">Canara Bank</option>
+                    <option value="ICICI Bank">ICICI Bank</option>
+                    <option value="Bank of Maharashtra">Bank of Maharashtra</option>
+                    <option value="Bank of Baroda">Bank of Baroda</option>
+                    <option value="Assam Grameen vikas Bank">Assam Grameen vikas Bank</option>
+                    <option value="Kotak Mahindra Bank">Kotak Mahindra Bank</option>
+                    <option value="CITI Bank">CITI Bank</option>
+                    <option value="Central Bank of india">Central Bank of india</option>
+                    <option value="IDBI Bank">IDBI Bank</option>
+                    <option value="Federal Bank">Federal Bank</option>
+                    <option value="Corporation Bank">Corporation Bank</option>
+                    <option value="Citi Union Bank">Citi Union Bank</option>
+                    <option value="South Indian Bank">South Indian Bank</option>
+                    <option value="Indusind Bank">Indusind Bank</option>
+                    <option value="PayTM Payment Bank">PayTM Payment Bank</option>
+                    <option value="KVB Bank">KVB Bank</option>
+                    <option value="Tamilnadu Merchantile Bank">Tamilnadu Merchantile Bank</option>
+                    <option value="North east small finance Bank">North east small finance Bank</option>
+                    <option value="Punjab national Bank">Punjab national Bank</option>
+                    <option value="IOB Bank">IOB Bank</option>
+                    <option value="Assam tripura grameen Bank">Assam tripura grameen Bank</option>
+                    <option value="Gayathri co-operative Bank">Gayathri co-operative Bank</option>
+                    <option value="Oriental Bank of commerce">Oriental Bank of commerce</option>
+                    <option value="DCB Bank">DCB Bank</option>
+                    <option value="Yes Bank">Yes Bank</option>
+                    <option value="IDFC Bank">IDFC Bank</option>
+                    <option value="Standard chartered Bank">Standard chartered Bank</option>
+                    <option value="Co-Operative Bank">Co-Operative Bank</option>
+                    <option value="ESAF Small finance Bank">ESAF Small finance Bank</option>
+                    <option value="Vijaya Bank">Vijaya Bank</option>
+                    <option value="Tripura grameen Bank">Tripura grameen Bank</option>
+                    <option value="Bharat Bank">Bharat Bank</option>
+                    <option value="Apex Bank Limited">Apex Bank Limited</option>
+                    <option value="EQUITAS SMALL FINANCE BANK LTD">EQUITAS SMALL FINANCE BANK LTD</option>
+                    <option value="RBL Bank">RBL Bank</option>
+                    <option value="The development bank of singapore">The development bank of singapore</option>
+                    <option value="West Bengal state Co-Operative opex Bank">West Bengal state Co-Operative opex Bank</option>
+                    <option value="Telangala Co-Operative Bank">Telangala Co-Operative Bank</option>
+                    <option value="Karur vysa Bank">Karur vysa Bank</option>
+                    <option value="Tripura state co-operative Bank">Tripura state co-operative Bank</option>
+                    <option value="South indian Bank">South indian Bank</option>
+                    <option value="The Hongkong and Shanghai Banking Corporation">The Hongkong and Shanghai Banking Corporation</option>
+                    <option value="Dhanalakshmi Bank">Dhanalakshmi Bank</option>
+                    <option value="Kanaka mahalakshmi bank">Kanaka mahalakshmi bank</option>
+                    <option value="Jana Small Finance Bank">Jana Small Finance Bank</option>
+                    <option value="Paschim Banga Gramin Bank">Paschim Banga Gramin Bank</option>
+                    <option value="Costal local bank">Costal local bank</option>
+                    <option value="Dena Bank">Dena Bank</option>
+                    <option value="DBS Bank">DBS Bank</option>
+                    <option value="Shamrao Vithal Co-operative Bank">Shamrao Vithal Co-operative Bank</option>
+                    <option value="CSB Bank">CSB Bank</option>
+                    <option value="Saraswat Bank">Saraswat Bank</option>
+                    <option value="Rathnakar Bank">Rathnakar Bank</option>
+                    <option value="Suryoday small finance bank LTD">Suryoday small finance bank LTD</option>
+                    <option value="Fincare small finance Bank">Fincare small finance Bank</option>
+                    <option value="Syndicate bank">Syndicate bank</option>
+                    <option value="Suryodaya small financial Bank">Suryodaya small financial Bank</option>
+                    <option value="Adarsh Credit Cooperative Society Limited">Adarsh Credit Cooperative Society Limited</option>
+                    <option value="Tamilnadu state opex co-operative bank">Tamilnadu state opex co-operative bank</option>
+                    <option value="Abhyudaya Co-operative Bank Ltd">Abhyudaya Co-operative Bank Ltd</option>
+                    <option value="SVC co operative bank">SVC co operative bank</option>
+                    <option value="The Burdwan central co-operative Bank LTD">The Burdwan central co-operative Bank LTD</option>
+                    <option value="Telangana Grameen Bank">Telangana Grameen Bank</option>
+                    <option value="Andra pragathi grameena bank">Andra pragathi grameena bank</option>
+                    <option value="Airtel Payments Bank">Airtel Payments Bank</option>
+                    <option value="Kerala Grameena Bank">Kerala Grameena Bank</option>
+                    <option value="Karnataka Grameena Bank">Karnataka Grameena Bank</option>
+                    <option value="Chandana Bank">Chandana Bank</option>
+                    <option value="HSBC">HSBC</option>
+                    <option value="Option 90">Option 90</option>
+                    </select>
+                    <br /> <br />
+                    <label>Has the Customer used PLANET App in the Journey<span class="required">*</span> </label> <br /> <br />
+                    <input type="radio" value="Yes" size="70" class="form-control" placeholder="Has the Customer used PLANET App in the Journey" name="Has the Customer used PLANET App in the Journey" id="Has the Customer used PLANET App in the Journey" />
+                    <label>Yes</label> <input type="radio" required size="70" class="form-control" value="No" placeholder="Has the Customer used PLANET App in the Journey" name="Has the Customer used PLANET App in the Journey" id="Has the Customer used PLANET App in the Journey" />
+                    <label>No</label> <br /> <br /> <br /><br /><br />
+                    <p> <label>If No- Planet app</label> </p>
+                    <p1><label>If customer has not selected, please mention the clear reason<span class="required">*</span></label> <br /> <input type="text" size="55" class="form-control" placeholder="If customer has not selected, please mention the clear reason" name="If customer has not selected, please mention the clear reason" id="If customer has not selected, please mention the clear reason" required /></p1>
+                    <br /> <br />
+
+                    <!--  <input type="text" class="form-control" placeholder="EMP ID" name="EMP ID" id="EMP ID" />
+                        <input type="text" class="form-control" placeholder="EMP ID" name="EMP ID" id="EMP ID" />
+
+                        <input type="text" class="form-control" placeholder="EMP ID" name="EMP ID" id="EMP ID" />
+    <br />-->
+
+                    <h3>
+                        <input type="submit" value="    Submit     " class="button btn=primary" id="submit" "   />
+                        <br />
+                    </h3>
+                    <br />
+                    <a>
+                        <label> This form was created by Omkar Sangeeta Mali inside of Vindhya e-Infomedia Private Limited.</label>
+                    </a>
+</h4>
+        </form>
+    </div>
+    <script
+    type="text/javascript">
+            $("#select2").select2({
+                templateResult: formatState
+        });
+            function formatState (state) {
+            if (!state.id) {
+                return state.text;
+            }
+            var baseUrl = "flags";
+            var $state = $(
+            '<span><text src="' + baseUrl + '/' + state.element.value.toLowerCase() + '" class="Text" /> ' + state.text + '</span>'
+            );
+            return $state;
+        }
+
+
+        const scriptURL = 'Inter URL Here'
+        const form = document.forms['contactform']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thank you! & Good job! your form is submitted successfully."))
+                .then(() => { window.location.reload(); })
+                .catch(error => alert(" Oops! Sorry Dear Someone Already Submitted This Register Number! Better Luck Next Time."))
+        })
+    </script>
+</body>
+<!--console.error('Error!', error.message))-->
+</html>
+
